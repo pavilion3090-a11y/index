@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1>ระบบลงทะเบียนนักศึกษาใหม่</h1>
+        <p>แบบฟอร์มลงทะเบียนนักศึกษาใหม่</p>
+    </head> 
+    <main>
+        <form>
+
+            <fieldset>
+                <legend>ข้อมูลการเข้าสู่ระบบ</legend>
+                <label for="username">ชื่อผู้ใช้ (Username):</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">รหัสผ่าน (Password):</label>
+                <input type="password" id="password" name="password" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                <label for="name">ชื่อ-นามสกุล:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="date">วัน/เดือน/ปีเกิด:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="gender">เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">อื่น ๆ</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อมูลการศึกษา</legend>
+                <label for="level">ระดับชั้น:</label>
+                <input type="text" id="level" name="level" required><br>
+
+                <label for="major">ความสนใจเพิ่มเติม:</label>
+                <input type="checkbox" id="major" name="major" value="computer_science" required>
+                <label for="major">Web Design</label>
+                <input type="checkbox" id="major" name="major" value="software_engineering" required>
+                <label for="major">Database</label>
+                <input type="checkbox" id="major" name="major" value="data_science" required>
+                <label for="major">Coding</label>  <br>
+
+                <label for="address">ที่อยู่ปัจจุบัน:</label>
+                <textarea id="address" name="address" required rows="4" cols="50"></textarea><br><br>
+                
+                <input type="submit" value="ลงทะเบียน">
+                <button type="reset">ล้างข้อมูล</button>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; สงวนลิขสิทธิ์ 2026 แผนกวิชาเทคโนโลยีสารสนเทศ วิทยาลัยเทคนิคสุราษฎร์ธานี</p>
+    </footer>
+</html>
